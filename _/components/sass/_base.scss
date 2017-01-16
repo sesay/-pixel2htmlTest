@@ -201,6 +201,12 @@
         @include float-left();
         @include top-spacer();
         background-color: #f9f9f9;
+    } //price-listing
+    .price-listing-grid {
+        float: left;
+        width: 100%;
+        -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
         .price-listing-item {
             color: #86939e;
             border-radius: 4px;
@@ -209,9 +215,6 @@
             width: 23.75rem; // 380px
             float: left;
             text-align: center;
-            &:nth-child(1){
-                border:1px solid #f4f4f4;
-            }
             .large-text {
                 font-size: 14px;
                 border-bottom: 1px solid #e1e8ee;
@@ -241,6 +244,7 @@
                 text-align: center;
                 color: #358ed7;
                 margin-top: 31px;
+                text-transform: capitalize;
             }
             .small-text {
                 border-bottom: 1px solid #e1e8ee;
@@ -283,10 +287,43 @@
                 font-family: 'Roboto-Medium', sans-serif;
                 text-transform: uppercase;
             }
+            &:nth-child(1) {
+                border: 1px solid #f4f4f4;
+                border-top-right-radius: 0;
+            }
+            &:nth-child(2){
+                border-top-left-radius:0;
+            }
+            &:nth-child(3) {
+                background-color: #39add1;
+                border-top-left-radius: 0;
+                .item-cost {
+                    color: #fff;
+                }
+                h3 {
+                    color: rgba(255, 255, 255, 0.7);
+                }
+                small {
+                    color: rgba(255, 255, 255, 0.7);
+                }
+                .intro {
+                    color: rgba(255, 255, 255, 0.6);
+                }
+                li.check {
+                    color: #fff;
+                }
+                a {
+                    background-color: #7dc855;
+                    color: #fff;
+                    border: 0;
+                }
+            }
         }
-    } //price-listing
+    } //price-listing-grid
     .clients {
         @include float-left();
+        @include top-spacer();
         background-color: #5e6977;
+        color:#fff;
     }
 } //main-content
