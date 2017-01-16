@@ -19,5 +19,12 @@
   },
   "dependencies": {
     "slick-carousel": "^1.6.0"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.min.css"
+      ]
+    }
   }
 }
