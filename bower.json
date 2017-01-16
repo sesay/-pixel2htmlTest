@@ -1,0 +1,23 @@
+{
+  "name": "pixel2html project",
+  "description": "test project",
+  "main": "",
+  "authors": [
+    "sesay umar"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.1"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.6.0"
+  }
+}

@@ -1,0 +1,84 @@
+#global-header {
+    height: 100px;
+    @include display-flex();
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    padding-top: 39px;
+    .logo {
+        display: inline-block;
+        width: 121px;
+        float: left;
+    }
+    nav {
+        font-family: 'Roboto-Medium', sans-serif;
+        display: inline-block;
+        float: left;
+        color: #86939e;
+        padding-left: 52px;
+        padding-top: 2px;
+        li {
+            display: inline-block;
+            float: left;
+            h2 {
+                font-size: 18px;
+            }
+            a {
+                padding-right: 40px;
+            }
+        }
+    }
+}
+
+.header-title {
+    color: #43484d;
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 22px;
+    h2 {
+        font-size: 52px;
+    }
+    &.large {
+        text-align: center;
+    }
+    &.small {
+        h2 {
+            font-size: 32px;
+        }
+    }
+    a {
+        font-family: 'Roboto-Medium', sans-serif;
+    }
+}
+
+.services-list {
+    float: left;
+    width: 100%;
+    li {
+        display: inline-block;
+        float: left;
+        h2 {
+            font-size: 18px;
+            color: #43484d;
+        }
+        span.icon_data {
+            background-image: url(../images/services.png);
+            background-position: 0px 0px;
+            display: inline-block;
+            width: 56px;
+            height: 45px;
+        }
+        span.icon_text {
+            background-image: url(../images/services.png);
+            background-position: -61px 0px;
+            display: inline-block;
+            width: 47px;
+            height: 48px;
+        }
+        span.icon_prototype {
+            background-image: url(../images/services.png);
+            background-position: 0px -50px;
+            display: inline-block;
+            width: 52px;
+            height: 48px;
+        }
+    }
+}
