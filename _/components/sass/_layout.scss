@@ -6,13 +6,16 @@
     box-sizing: border-box;
     outline: 0;
 }
-.center-content {
-    width: 75.72%;
-    margin: 0 auto;
+
+@media (min-width: 1140px) {
+    .center-content {
+        width: 1140px;
+        margin: 0 auto;
+    }
 }
 
 figure img {
-  max-width:100%;
+    max-width: 100%;
 }
 
 img {
@@ -22,13 +25,15 @@ img {
 }
 
 a {
-  text-decoration:none;
-  color:inherit;
+    text-decoration: none;
+    color: inherit;
 }
+
 p {
-  line-height:28px;
+    line-height: 28px;
 }
+
 body {
-  font-size:16px; // default font size
-  font-family:'Roboto-Regular',sans-serif;
+    font-size: 16px; // default font size
+    font-family: 'Roboto-Regular', sans-serif;
 }
