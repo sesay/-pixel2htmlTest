@@ -27,8 +27,7 @@
             }
         }
     }
-}
-
+} //global-header
 .main-content {
     @include top-spacer();
     .header-title {
@@ -199,17 +198,21 @@
     } //slides
     .price-listing {
         @include float-left();
-        @include top-spacer();
         background-color: #f9f9f9;
+        .header-title {
+        position: relative;
+        top: 112px;
+        }
     } //price-listing
     .price-listing-grid {
         float: left;
         width: 100%;
-        -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
-        box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
+        position: relative;
+        -webkit-transform: translateY(130px);
+        -moz-transform: translateY(130px);
+        transform: translateY(130px);
         .price-listing-item {
             color: #86939e;
-            border-radius: 4px;
             padding: 30px;
             background: #fff;
             width: 23.75rem; // 380px
@@ -289,14 +292,14 @@
             }
             &:nth-child(1) {
                 border: 1px solid #f4f4f4;
-                border-top-right-radius: 0;
+                
             }
             &:nth-child(2) {
-                border-top-left-radius: 0;
+                
             }
             &:nth-child(3) {
                 background-color: #39add1;
-                border-top-left-radius: 0;
+
                 .item-cost {
                     color: #fff;
                 }
@@ -322,7 +325,9 @@
     } //price-listing-grid
     .clients {
         @include float-left();
-        @include top-spacer();
+        padding-top:250px;
+        position:relative;
+        z-index:-1;
         background-color: #5e6977;
         padding-bottom: 109px;
         .header-title {
@@ -418,6 +423,7 @@
                     margin-left: -78px;
                     img {
                         width: 78px;
+                        margin-right:22px;
                     }
                 }
                 h2 {
@@ -427,5 +433,5 @@
                 }
             }
         }
-    }
+    } //footer
 } //main-content
