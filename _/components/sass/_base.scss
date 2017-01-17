@@ -34,8 +34,9 @@
         color: #5e6977;
         font-family: 'Roboto-Light', sans-serif;
         h2 {
-            font-size: 52px;
-            margin-bottom: 20px;
+            font-size: 47px;
+            margin-bottom: 25px;
+            line-height:56px;
             color: #43484d;
         }
         &.large {
@@ -55,20 +56,27 @@
         }
     }
     .banner-image {
-        margin-top: 58px;
+        margin-top: 75px;
         .services-list {
             float: left;
             width: 100%;
             padding-top: 66px;
             padding-bottom: 137px;
             color: #86939e;
+            line-height:15px;
+            padding-left:15px;
             p {
-                line-height: 22px;
+                line-height: 26px;
             }
             li {
                 display: inline-block;
                 float: left;
                 margin-left: 82px;
+                padding-right:97px;
+                &:last-child {
+                    padding-right:0;
+                    margin-left:70px;
+                }
                 h2 {
                     font-size: 18px;
                     color: #43484d;
@@ -91,6 +99,8 @@
                     display: inline-block;
                     width: 47px;
                     height: 48px;
+                    margin-left: -79px;
+                    margin-top: -2px;
                 }
                 span.icon_prototype {
                     background-image: url(../images/services.png);
