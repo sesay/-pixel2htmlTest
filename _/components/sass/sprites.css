@@ -16,21 +16,39 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-icon_data {
+.icon-logo_adobe {
+  background-image: url(../images/sprites/sprites.png);
+  background-position: -84px -76px;
+  width: 105px;
+  height: 23px;
+}
+.icon-logo_brazzers {
+  background-image: url(../images/sprites/sprites.png);
+  background-position: 0px -41px;
+  width: 140px;
+  height: 30px;
+}
+.icon-logo_evernote {
   background-image: url(../images/sprites/sprites.png);
   background-position: 0px 0px;
-  width: 56px;
-  height: 45px;
+  width: 139px;
+  height: 36px;
 }
-.icon-icon_prototype {
+.icon-logo_marvel {
   background-image: url(../images/sprites/sprites.png);
-  background-position: 0px -50px;
-  width: 52px;
-  height: 48px;
+  background-position: 0px -76px;
+  width: 79px;
+  height: 35px;
 }
-.icon-icon_text {
+.icon-logo_motorolla {
   background-image: url(../images/sprites/sprites.png);
-  background-position: -61px 0px;
-  width: 47px;
-  height: 48px;
+  background-position: -144px 0px;
+  width: 156px;
+  height: 30px;
+}
+.icon-logo_netflix {
+  background-image: url(../images/sprites/sprites.png);
+  background-position: -145px -41px;
+  width: 96px;
+  height: 26px;
 }
