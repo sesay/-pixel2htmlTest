@@ -272,6 +272,8 @@
         margin-left: 10px;
         @include display-flex();
         flex-wrap: wrap;
+        -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.15);
         .price-listing-item {
             color: #86939e;
             padding: 30px;
@@ -282,6 +284,14 @@
             -webkit-transition: all .3s;
             -moz-transition: all .3s;
             transition: all .3s;
+            &:nth-child(1) {
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
+            &:nth-child(3) {
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
             &:hover {
                 box-shadow: 0 8px 8px rgba(231, 233, 236, 0), 0 0 8px rgba(1, 67, 163, .12), 0 0 8px #e7e9ec;
                 transform: translate3d(0, -2px, 0);
@@ -506,6 +516,15 @@
         img {
             width: inherit;
         }
+        .min-width {
+            width: 13.7%;
+        }
+        .med-width {
+            width: 40.4%;
+        }
+        .large-width {
+            width: 45.9%;
+        }
         .footer-links {
             display: inline-block;
             width: 140px;
@@ -536,14 +555,11 @@
         }
         ul {
             .footer-desc {
-                padding-left: 84px;
-                width: 460px;
+                padding-left: 107px;
+                position: relative;
                 p {
                     line-height: 24px;
                 }
-            }
-            .footer-links-group {
-                width: 523px;
             }
             li {
                 display: inline-block;
@@ -552,7 +568,8 @@
                 figure {
                     display: inline-block;
                     float: left;
-                    margin-left: -78px;
+                    position: absolute;
+                    left: 5px;
                     img {
                         width: 78px;
                         margin-right: 22px;

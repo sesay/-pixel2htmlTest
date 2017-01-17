@@ -37,3 +37,28 @@ body {
     font-size: 16px; // default font size
     font-family: 'Roboto-Regular', sans-serif;
 }
+//media queries medium screens
+@media all and (max-width: 1300px) {
+    .center-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .main-content .banner-image .services-list {
+      @include display-flex();
+      li {
+        padding:0;
+        padding-left:100px;
+      }
+    }
+    .main-content .price-listing-grid 
+    .price-listing-item .large-text .intro {
+      font-size:14px;
+    }
+} //medium screens
+
+
+@media all and (max-width:1260px) {
+  p {
+    line-height:24px;
+  }
+}
