@@ -41,7 +41,11 @@
     transition-duration: 0.15s;
     transition-timing-function: ease;
 }
-
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    background:#fff;
+}
 .hamburger-inner::before,
 .hamburger-inner::after {
     content: "";

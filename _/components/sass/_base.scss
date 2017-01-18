@@ -4,6 +4,11 @@
     -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
     padding-top: 39px;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    z-index: 999;
+    top:0;
     .logo {
         display: inline-block;
         width: 121px;
@@ -60,6 +65,7 @@
 } //global-header
 .main-content {
     @include top-spacer();
+    margin-top: 100px;
     .header-title {
         color: #5e6977;
         font-family: 'Roboto-Light', sans-serif;
@@ -116,7 +122,7 @@
                     font-size: 18px;
                     color: #43484d;
                     margin-bottom: 9px;
-                    line-height:20px;
+                    line-height: 20px;
                 }
                 span[class*='icon_'] {
                     float: left;
@@ -205,31 +211,34 @@
                 display: inline-block;
                 float: left;
                 margin-right: 10px;
-                width: 6px;
-                height: 6px;
+                vertical:middle;
                 border-radius: 50%;
                 overflow: hidden;
-                background-color: #e7e9ec;
+                background:url(../images/bullet-inactive.png) 50% 50% no-repeat;
+                width:10px;
+                height:10px;
                 &:last-child {
                     margin-right: 0;
                 }
                 button {
                     display: block;
                     height: 100%;
-                    background: none;
+                    background: transparent;
+                    color:transparent;
+                    line-height:0;
+                    background:transparent;
                     border: 0;
                     cursor: pointer;
-                    -webkit-animation: all 0.35s ease-in-out;
-                    -moz-animation: all 0.35s ease-in-out;
-                    animation: all 0.35s ease-in-out;
-                }
+                    position:relative;
+                    
+                } //button
+
                 &.slick-active {
-                    -webkit-transform: scale(1.5);
-                    -moz-transform: scale(1.5);
-                    transform: scale(1.5);
-                    background-color: #358ed7;
+                    background:url(../images/bullet-active.png)no-repeat;
+                    background-size:contain;
                 }
-            }
+                
+            } // li
         }
         img {
             height: 500px;
@@ -384,7 +393,7 @@
                             position: absolute;
                             bottom: 4px;
                             left: 0;
-                            top:5px;
+                            top: 5px;
                         }
                     }
                 }
@@ -549,10 +558,25 @@
                 }
             }
         }
-        .lang-switch img {
-            display: inline-block;
-            float: left;
-            margin-right: 10px;
+        .lang-switch {
+            position:relative;
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 8px;
+                height: 5px;
+                background: url(../images/Icon-down.png) no-repeat;
+                background-size: contain;
+                margin-left: 8px;
+                position: absolute;
+                top: 8px;
+
+            }
+            img {
+                display: inline-block;
+                float: left;
+                margin-right: 10px;
+            }
         }
         ul {
             .footer-desc {

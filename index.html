@@ -359,7 +359,10 @@
         var mobileMenu = function() {
             $('#global-header .hamburger').click(function(){
                 $(this).toggleClass('is-active');
-                    $('#global-header nav').toggleClass('show');
+                    $('#global-header nav').fadeToggle( "slow", "linear" );
+                    $('body').toggleClass('body-fix');
+
+                    return false;
             });
             
             

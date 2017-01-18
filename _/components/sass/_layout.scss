@@ -38,7 +38,9 @@
         font-family: 'Roboto-Regular', sans-serif;
     }
   
-    
+    .body-fix {
+      position:fixed;
+    }
     //media queries medium screens
     @media all and (max-width: 1300px) {
         .center-content {
@@ -73,7 +75,6 @@
     
     @media all and (max-width: 1200px) {
         .main-content .slides .header-title {
-            border: 1px solid red;
             width: 100%;
             transform: inherit;
             text-align: center;
@@ -83,7 +84,6 @@
             display: -ms-flexbox;
             display: flex;
             justify-content: center;
-            border: 1px solid red;
             width: 100%;
             transform: inherit;
         }
@@ -178,10 +178,10 @@
     }
     
     // navigation
-    
+        @media all and (min-width: 720px) {#global-header nav{display:block !important;}}
         @media all and (max-width: 720px) {
             #global-header nav {
-                position: absolute;
+                position: fixed;
                 height: 100%;
                 width: 100%;
                 left: 0;
@@ -189,7 +189,17 @@
                 padding-top: 50px;
                 background: rgba(0, 0, 0, 0.8);
                 color: #fff;
+                z-index:30;
+                padding:0;
                 display:none;
+                & > ul {
+                  top: 50%;
+                  position: absolute;
+                  left: 50%;
+                  -webkit-transform: translate(-50%,-50%);
+                  -moz-transform: translate(-50%,-50%);
+                  transform: translate(-50%,-50%);
+                }
 
                 &.show {
                   display:block;
@@ -208,6 +218,9 @@
             }
             #global-header .hamburger {
               display:inline-block;
+              position: fixed;
+              right: 30px;
+              z-index:90;
             }
         }
    
@@ -222,6 +235,9 @@
                 br {
                     content: '';
                 }
+            }
+            .slides {
+              display:none;
             }
             .clients .sponsors ul {
                 justify-content: center;
