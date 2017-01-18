@@ -25,6 +25,13 @@
                         <li><a href="">Contact sales</a></li>
                     </ul>
                 </nav>
+                <!-- mobile-icon -->
+                <button class="hamburger hamburger--collapse" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+                <!-- /mobile-icon -->
             </div>
         </header>
         <!-- /global-header -->
@@ -348,6 +355,17 @@
             cssEase: 'linear'
         });
         $('.slick-dots').wrap('<div class="center-content"></div>');
+        //mobile menu
+        var mobileMenu = function() {
+            $('#global-header .hamburger').click(function(){
+                $(this).toggleClass('is-active');
+                    $('#global-header nav').toggleClass('show');
+            });
+            
+            
+            
+        };
+        mobileMenu();
 
 
     });

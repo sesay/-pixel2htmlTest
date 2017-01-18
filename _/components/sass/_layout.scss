@@ -37,6 +37,7 @@
         font-size: 16px; // default font size
         font-family: 'Roboto-Regular', sans-serif;
     }
+  
     
     //media queries medium screens
     @media all and (max-width: 1300px) {
@@ -177,7 +178,7 @@
     }
     
     // navigation
-    @media all and (max-width:720px) {
+    
         @media all and (max-width: 720px) {
             #global-header nav {
                 position: absolute;
@@ -188,6 +189,12 @@
                 padding-top: 50px;
                 background: rgba(0, 0, 0, 0.8);
                 color: #fff;
+                display:none;
+
+                &.show {
+                  display:block;
+                  transition:all 2s ease-in-out;
+                }
                 li {
                     display: block;
                     width: 100%;
@@ -199,8 +206,11 @@
                     }
                 }
             }
+            #global-header .hamburger {
+              display:inline-block;
+            }
         }
-    }
+   
     
     @media all and (max-width:640px) {
         .main-content {
