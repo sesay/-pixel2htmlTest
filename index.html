@@ -341,38 +341,14 @@
         </section>
     </main>
     <!-- /main -->
+
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="_/js/scripts.js"></script>
     <script src="bower_components/slick-carousel/slick/slick.js"></script>
     <!-- endbower -->
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('.slides').slick({
-            dots: true,
-            infinite: true,
-            speed: 500,
-            fade: true,
-            cssEase: 'linear'
-        });
-        $('.slick-dots').wrap('<div class="center-content"></div>');
-        //mobile menu
-        var mobileMenu = function() {
-            $('#global-header .hamburger').click(function(){
-                $(this).toggleClass('is-active');
-                    $('#global-header nav').fadeToggle( "slow", "linear" );
-                    $('body').toggleClass('body-fix');
-
-                    return false;
-            });
-            
-            
-            
-        };
-        mobileMenu();
 
 
-    });
-    </script>
 </body>
 
 </html>
