@@ -26,8 +26,8 @@ module.exports = function(grunt) {
                     },
                     dist: {
                         src: [
-                        'bower_components/jquery/dist/jquery.js', //jquery',
-                        'bower_components/slick-carousel/slick/slick.min.js', //jquery
+                            'bower_components/jquery/dist/jquery.js', //jquery',
+                            'bower_components/slick-carousel/slick/slick.min.js', //jquery
                         ],
                         dest: '_/components/js/_bower.js',
                     },
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
                     },
                     all: {
                         src: [
-                        'bower_components/slick-carousel/slick/slick.css'
+                            'bower_components/slick-carousel/slick/slick.css'
 
                         ],
                         dest: "_/components/sass/_bower.scss"
@@ -50,6 +50,7 @@ module.exports = function(grunt) {
                         dest: '_/components/images/sprites/sprites.png',
                         destCss: '_/components/sass/sprites.css',
                         padding: 5
+                        
                     }
                 },
                 wiredep: {
@@ -89,5 +90,5 @@ module.exports = function(grunt) {
                 } // watch     
 
             }) //initConfig
-        grunt.registerTask('default', ['connect', 'concat','concat_css','uglify', 'watch']);
+        grunt.registerTask('default', ['connect', 'concat', 'concat_css', 'uglify', 'watch']);
     } //exports

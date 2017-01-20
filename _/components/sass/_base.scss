@@ -131,22 +131,22 @@
                     top: 0;
                 }
                 span.icon_data {
-                    background-image: url(../images/services.png);
-                    background-position: 0px 0px;
+                    background:url(../images/icon-data.png) no-repeat;
+                    background-size:contain;
                     display: inline-block;
                     width: 56px;
                     height: 45px;
                 }
                 span.icon_text {
-                    background-image: url(../images/services.png);
-                    background-position: -61px 0px;
+                    background:url(../images/icon-text.png) no-repeat;
+                    background-size:contain;
                     display: inline-block;
                     width: 47px;
                     height: 48px;
                 }
                 span.icon_prototype {
-                    background-image: url(../images/services.png);
-                    background-position: 0px -50px;
+                    background:url(../images/icon-prototype.png) no-repeat;
+                    background-size:contain;
                     display: inline-block;
                     width: 52px;
                     height: 48px;
