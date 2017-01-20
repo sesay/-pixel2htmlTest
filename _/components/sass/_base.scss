@@ -390,13 +390,13 @@
                     padding-left: 31px;
                     position: relative;
                     &.check {
-                        color: #5e6977;
+                        color: #5e6977;                        
                         &:before {
                             content: '';
                             display: inline-block;
+                            background:url('../images/icon-check.png')no-repeat;
                             width: 16px;
                             height: 11px;
-                            background: url(../images/icon-check.png) no-repeat;
                             background-size: contain;
                             position: absolute;
                             bottom: 4px;
