@@ -194,9 +194,9 @@
         }
         button.slick-prev.slick-arrow {
             left: 120px;
-            -webkit-transform: scale(-1);
-            -moz-transform: scale(-1);
-            transform: scale(-1);
+            -webkit-transform: scaleX(-1) translateY(-50%);;
+            -moz-transform: scaleX(-1) translateY(-50%);;
+            transform: scaleX(-1) translateY(-50%);;
         }
         ul.slick-dots {
             position: absolute;
@@ -260,6 +260,14 @@
             a {
                 color: #358ed7;
                 margin-top: 20px;
+                &:after {
+                    content:'';
+                    display:inline-block;
+                    width:7px;
+                    height:11px;
+                    background:url(../images/slider-arrow.png) no-repeat;
+                    margin-left:10px;
+                }
             }
         }
     } //slides
@@ -576,6 +584,7 @@
                 display: inline-block;
                 float: left;
                 margin-right: 10px;
+                width:15px;
             }
         }
         ul {
